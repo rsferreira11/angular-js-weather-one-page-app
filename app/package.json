@@ -1,0 +1,14 @@
+{
+  "name": "forecast-app",
+  "version": "1.0.0",
+  "description": "Simple angular.js training",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

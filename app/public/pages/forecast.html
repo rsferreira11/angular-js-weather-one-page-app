@@ -1,0 +1,27 @@
+
+
+<a href="#/">
+    Back To Search
+</a>
+
+<h1>Forecast for {{ city }}</h1>
+
+<hr />
+    Days: 
+    <a href="#/forecast/2" ng-class="{ 'bg-primary': days == 2}">2</a> | 
+    <a href="#/forecast/5" ng-class="{ 'bg-primary': days == 5}">5</a> | 
+    <a href="#/forecast/7" ng-class="{ 'bg-primary': days == 7}">7</a>
+<hr />
+
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <weather-report 
+                weather-day="w" 
+                convert-to-celsius="convertToCelsius(kelvin)" 
+                convert-to-date="convertToDate(dt)"
+                date-format="MMMM d, y"
+            ></weather-report>
+        </div>
+    </div>
+</div>
